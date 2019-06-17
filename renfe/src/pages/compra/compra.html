@@ -1,0 +1,53 @@
+<!--
+  Generated template for the CompraPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+<ion-title text-center >Renfe</ion-title>
+<ion-buttons right class="botones">
+
+  <button color='negro'class="but1"
+        ion-button
+        icon-only
+        >
+        <ion-icon name="help-circle"></ion-icon>
+  </button>
+  <button color='negro'class="but1"
+        ion-button
+        icon-only
+        >
+        <ion-icon name="information-circle"></ion-icon>
+  </button>
+</ion-buttons>
+</ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<h1>Horarios / Compra</h1>
+
+<div class="">
+  <div class="cajas" *ngFor="let horario of horarios | async">
+
+    <div class="destino">
+      <div class="fechas">
+        <p class="ave1">{{horario.fecha}}</p> <p class="ave">           AVE {{horario.codigo}}</p>
+      </div>
+      <p>{{horario.horario1}} {{horario.origen}}</p>
+      <p>{{horario.horario2}} {{horario.destino}}</p>
+    </div>
+    <div class="">
+      <p class="precio"><ion-icon name="add"></ion-icon> Turista Promo {{horario.turista}}</p>
+      <p class="precio"><ion-icon name="add"></ion-icon> Turista Plus Promo {{horario.plus}}</p>
+      <p class="precio"><ion-icon name="add"></ion-icon> Preferente Promo {{horario.preferente}}</p>
+    </div>
+
+
+  </div>
+</div>
+
+</ion-content>

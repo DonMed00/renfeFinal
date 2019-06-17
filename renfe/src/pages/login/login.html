@@ -1,0 +1,52 @@
+<ion-content padding>
+
+    <ion-slides pager>
+      <ion-slide class="slide1">
+        <button ion-button block (click)="continuar()">
+          Continuar
+        </button>
+      </ion-slide>
+
+
+
+        <ion-slide>
+
+            <ion-toolbar>
+            </ion-toolbar>
+
+            <img src="assets/imgs/renfe1.png" class="slide-image" />
+            <h2 class="slide-title">Bienvenido a la página de Renfe</h2>
+            <p>Debe de iniciar sesión para continuar o registrarse</p>
+
+            <button ion-button block (click)="mostrarInput()">
+              Iniciar
+            </button>
+            <button ion-button block (click)="mostrarInput2()">
+              Registrarse
+            </button>
+            <button ion-button block (click)="cerrarApp()">
+              Salir
+            </button>
+
+        </ion-slide>
+
+
+        <!-- Ultimo Slide -->
+        <ion-slide>
+            <ion-toolbar>
+            </ion-toolbar>
+
+            <img src="assets/imgs/check.jfif" class="slide-image" />
+
+            <button ion-button large clear icon-right color="primary" (click)="ingresar()">
+          Continuar
+          <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+
+        </ion-slide>
+        <!-- Fin del último slide -->
+
+    </ion-slides>
+
+
+</ion-content>

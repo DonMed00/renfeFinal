@@ -1,0 +1,3 @@
+Usuarios validos: amd
+paginas de información,viajes y compras realizadas.
+Falta registro y facebook por tiempo.

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center >Renfe</ion-title>
+
+    <ion-buttons right class="botones">
+      <button color='negro' class="but1"
+              ion-button menuToggle="rightMenu"
+              icon-only
+              (click)="mostrarMenu()">
+              <ion-icon name="person"></ion-icon>
+            </button>
+      <button color='negro'class="but1"
+            ion-button
+            icon-only
+            >
+            <ion-icon name="help-circle"></ion-icon>
+      </button>
+      <button color='negro'class="but1"
+            ion-button
+            icon-only
+            (click)="verInfo()">
+            <ion-icon name="information-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+  <div class="cajagrande">
+    <div class="cajas" (click)="verHorarios()">
+      <h2> <img src="assets/imgs/1.png"/>Horarios / Compra</h2>
+    </div>
+    <div class="cajas" (click)="verViajes()">
+
+      <h2>  <img src="assets/imgs/2.png"/>Mis Viajes</h2>
+    </div>
+    <div class="cajas">
+
+      <h2><img src="assets/imgs/3.png"/>Puntos Tempo</h2>
+    </div>
+    <div class="cajas">
+
+      <h2>  <img src="assets/imgs/2.png"/>Abonos</h2>
+    </div>
+    <div class="cajas">
+
+      <h2><img src="assets/imgs/4.png"/>Puntualidad de Trenes</h2>
+    </div>
+    <div class="cajas" (click)="verInfo()">
+
+      <h2><img src="assets/imgs/5.png"/>Información</h2>
+    </div>
+  </div>
+</ion-content>

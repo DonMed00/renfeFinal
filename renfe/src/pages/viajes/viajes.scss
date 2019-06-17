@@ -1,0 +1,23 @@
+page-viajes {
+  ion-navbar {
+    width: 100%;
+    text-align: center;
+
+  }
+  .cajas{
+    border: 2px solid #4c0f77;
+  }
+
+  .but1{
+    float: left;
+  }
+
+  .titulo{
+    border: 1px solid black;
+    background-color: rgb(210, 216, 230);
+  }
+  .qr{
+    width: 100px;
+    margin-left: 30%;
+  }
+}

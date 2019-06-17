@@ -1,0 +1,58 @@
+<!--
+  Generated template for the ViajesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  <ion-title text-center >Renfe</ion-title>
+  <ion-buttons right class="botones">
+
+    <button color='negro'class="but1"
+          ion-button
+          icon-only
+          >
+          <ion-icon name="help-circle"></ion-icon>
+    </button>
+    <button color='negro'class="but1"
+          ion-button
+          icon-only
+          >
+          <ion-icon name="cog"></ion-icon>
+    </button>
+  </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h1>Mis Viajes</h1>
+  <div class="cajas" *ngFor="let viaje of viajes | async">
+    <div class="titulo">
+      {{viaje.titulo}}
+    </div>
+    <h3>Nº Billete   {{viaje.billete}}</h3>
+    <h3>Localizador  {{viaje.localizador}}</h3>
+
+    <div class="qr">
+      <img src={{viaje.qr}}>
+    </div>
+    <p>Fecha salida: {{viaje.salida}}</p>
+    <p>Fecha llegada: {{viaje.llegada}}</p>
+    <p>Tren: {{viaje.tren}}</p>
+    <p>Clase:  {{viaje.clase}}</p>
+    <p>Coche: {{viaje.coche}}  Asiento: {{viaje.asiento}}</p>
+    <hr>
+    <p>Tarifa: {{viaje.tarifa}}</p>
+    <h3>Documentos:</h3>
+    <p>Tarjeta Puntos Tempo  {{viaje.tempo}}</p>
+    <p>T.C.: {{viaje.visa}}</p>
+    <h3>Total: {{viaje.total}}  IVA (10%): 0.35</h3>
+      <h3>Fecha de emisión:  {{viaje.emision}}</h3>
+
+    </div>
+
+</ion-content>

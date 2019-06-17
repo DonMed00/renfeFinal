@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+<ion-menu id="rightMenu" [content]="content" side="right" type="reveal">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Bienvenid@ {{usuarioProvider.clave}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="salir()">
+      Salir
+    </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+
+
+<ion-nav [root]="rootPage" #content></ion-nav>
